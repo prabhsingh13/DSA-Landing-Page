@@ -566,23 +566,28 @@
         padding: 0 1rem;
     }
 
+    .why-dsa-section .col-lg-4 {
+        max-width: 100%;
+    }
+
     .why-card {
         padding: 0 0 2rem 0;
+        margin-bottom: 3.5rem;
     }
 
     .why-image {
-        width: calc(100% - 2.5rem);
-        height: 200px;
-        margin: -1.5rem auto 1.8rem;
+        width: 100%;
+        height: 180px;
+        transform: translateY(-1.5rem);
     }
 
     .why-title {
-        font-size: 1.15rem;
-        margin: 0 1.3rem 0.9rem;
+        font-size: 1.1rem;
+        margin: -0.5rem 1.3rem 0.9rem;
     }
 
     .why-description {
-        font-size: 0.9rem;
+        font-size: 0.88rem;
         margin: 0 1.3rem;
     }
 }
@@ -598,23 +603,25 @@
     }
 
     .why-card {
-        margin-bottom: 1.5rem;
+        margin-bottom: 3rem;
         padding: 0 0 1.8rem 0;
+        border-radius: 25px;
     }
 
     .why-image {
-        width: calc(100% - 2rem);
-        height: 180px;
-        margin: -1.2rem auto 1.5rem;
+        width: 100%;
+        height: 170px;
+        transform: translateY(-1.2rem);
+        border-radius: 20px;
     }
 
     .why-title {
-        font-size: 1.1rem;
-        margin: 0 1.2rem 0.8rem;
+        font-size: 1.05rem;
+        margin: -0.3rem 1.2rem 0.8rem;
     }
 
     .why-description {
-        font-size: 0.88rem;
+        font-size: 0.86rem;
         margin: 0 1.2rem;
     }
 }
@@ -631,23 +638,47 @@
 
     .why-card {
         padding: 0 0 1.5rem 0;
-        border-radius: 25px;
+        border-radius: 20px;
+        margin-bottom: 2.5rem;
     }
 
     .why-image {
-        width: calc(100% - 1.5rem);
-        height: 170px;
-        margin: -1rem auto 1.3rem;
-        border-radius: 20px;
+        width: 100%;
+        height: 160px;
+        transform: translateY(-1rem);
+        border-radius: 18px;
     }
 
     .why-title {
-        font-size: 1.05rem;
-        margin: 0 1rem 0.8rem;
+        font-size: 1rem;
+        margin: -0.2rem 1rem 0.8rem;
     }
 
     .why-description {
-        font-size: 0.85rem;
+        font-size: 0.84rem;
         margin: 0 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 375px) {
+    .why-card {
+        margin-bottom: 2rem;
+        padding: 0 0 1.3rem 0;
+    }
+
+    .why-image {
+        height: 140px;
+        transform: translateY(-0.8rem);
+    }
+
+    .why-title {
+        font-size: 0.95rem;
+        margin: -0.1rem 0.8rem 0.7rem;
+    }
+
+    .why-description {
+        font-size: 0.8rem;
+        margin: 0 0.8rem;
     }
 }
