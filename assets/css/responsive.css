@@ -746,7 +746,7 @@
 
 @media (max-width: 767px) {
     .syllabus-section {
-        padding: 3rem 0;
+        padding: 3rem 0 6rem 0;
     }
 
     .section-title-left {
@@ -786,7 +786,7 @@
     }
 
     .stat-box-syllabus {
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 3rem;
     }
 
     .stat-icon-circle-syllabus {
@@ -811,7 +811,7 @@
 
 @media (max-width: 576px) {
     .syllabus-section {
-        padding: 2.5rem 0;
+        padding: 2.5rem 0 5rem 0;
     }
 
     .section-title-left {
@@ -851,14 +851,13 @@
     }
 
     .stats-grid-syllabus {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
     .stat-box-syllabus {
-        padding: 1.5rem 1rem;
-        max-width: 300px;
-        margin: 0 auto;
+        padding: 1.5rem 3rem;
+        max-width: none;
     }
 
     .stat-icon-circle-syllabus {
@@ -1167,5 +1166,291 @@
 
     .class-features li {
         font-size: 0.82rem;
+    }
+}
+
+
+/* Payment Methods Section Responsive */
+@media (max-width: 991px) {
+    .payment-section {
+        padding: 4rem 0;
+    }
+
+    .payment-subtitle {
+        font-size: 0.95rem;
+        margin: -0.5rem auto 3rem;
+        padding: 0 1rem;
+    }
+
+    .payment-methods {
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 2.5rem 0;
+    }
+
+    .payment-method {
+        flex: 1 1 calc(33.333% - 2rem);
+        min-width: 150px;
+    }
+
+    .payment-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .payment-icon i {
+        font-size: 1.8rem;
+    }
+
+    .payment-title {
+        font-size: 1rem;
+    }
+
+    .payment-total {
+        flex: 1 1 100%;
+        border-left: none;
+        border-top: 1px solid #e0e0e0;
+        padding-left: 0;
+        padding-top: 2rem;
+        margin-top: 1rem;
+    }
+
+    .total-amount {
+        font-size: 2.2rem;
+    }
+
+    .certificate-section {
+        padding: 4rem 0;
+    }
+
+    .certificate-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .certificate-title {
+        font-size: 2rem;
+    }
+
+    .certificate-description {
+        font-size: 0.95rem;
+    }
+
+    .certificate-features li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .payment-section {
+        padding: 3rem 0;
+    }
+
+    .payment-subtitle {
+        font-size: 0.9rem;
+        margin: -0.5rem auto 2.5rem;
+    }
+
+    .payment-methods {
+        gap: 1.5rem;
+        padding: 2rem 0;
+    }
+
+    .payment-method {
+        flex: 1 1 100%;
+    }
+
+    .payment-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .payment-icon i {
+        font-size: 1.6rem;
+    }
+
+    .payment-title {
+        font-size: 0.95rem;
+    }
+
+    .payment-total {
+        padding-top: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .total-label {
+        font-size: 1rem;
+    }
+
+    .total-amount {
+        font-size: 2rem;
+    }
+
+    .total-note {
+        font-size: 0.85rem;
+    }
+
+    .certificate-section {
+        padding: 3rem 0;
+    }
+
+    .certificate-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .certificate-description {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .certificate-features li {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .certificate-image {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .payment-section {
+        padding: 2.5rem 0;
+    }
+
+    .payment-subtitle {
+        font-size: 0.85rem;
+        margin: -0.5rem auto 2rem;
+    }
+
+    .payment-methods {
+        gap: 1.2rem;
+        padding: 1.5rem 0;
+    }
+
+    .payment-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .payment-icon i {
+        font-size: 1.5rem;
+    }
+
+    .payment-title {
+        font-size: 0.9rem;
+    }
+
+    .payment-total {
+        padding-top: 1.2rem;
+    }
+
+    .total-label {
+        font-size: 0.95rem;
+    }
+
+    .total-amount {
+        font-size: 1.8rem;
+    }
+
+    .certificate-section {
+        padding: 2.5rem 0;
+    }
+
+    .certificate-title {
+        font-size: 1.6rem;
+    }
+
+    .certificate-title .highlight::after {
+        height: 10px;
+        bottom: -3px;
+    }
+
+    .certificate-description {
+        font-size: 0.85rem;
+    }
+
+    .certificate-features li {
+        font-size: 0.85rem;
+        padding-left: 1.5rem;
+    }
+
+    .certificate-image {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .payment-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .payment-icon i {
+        font-size: 1.3rem;
+    }
+
+    .payment-title {
+        font-size: 0.85rem;
+    }
+
+    .total-amount {
+        font-size: 1.6rem;
+    }
+
+    .certificate-title {
+        font-size: 1.5rem;
+    }
+
+    .certificate-features li {
+        font-size: 0.82rem;
+    }
+}
+
+
+/* Global Mobile Optimizations */
+@media (max-width: 576px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-title .highlight::after {
+        height: 10px;
+        bottom: -8px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Ensure proper spacing on all sections */
+@media (max-width: 576px) {
+    /* section {
+        overflow-x: hidden;
+    } */
+
+    .row {
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+    }
+
+    .row>* {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 }

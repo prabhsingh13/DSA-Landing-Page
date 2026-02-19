@@ -783,7 +783,7 @@ body {
 /* Batch Details Section */
 .batch-section {
     padding: 6rem 0;
-    background: linear-gradient(180deg, rgba(227, 30, 36, 0.03) 0%, rgba(255, 255, 255, 1) 100%);
+    background-color: rgb(227, 30, 36, 0.03);
 }
 
 .batch-section .row {
@@ -992,4 +992,182 @@ body {
     background-color: #c41a1f;
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(227, 30, 36, 0.3);
+}
+
+
+/* Payment Methods Section */
+.payment-section {
+    padding: 6rem 0;
+    background-color: var(--white-color);
+}
+
+.payment-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+    max-width: 700px;
+    margin: -1rem auto 4rem;
+    line-height: 1.7;
+}
+
+.payment-methods {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 3rem 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.payment-method {
+    text-align: center;
+    flex: 1;
+}
+
+.payment-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.payment-icon i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.payment-method:hover .payment-icon {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.payment-method:hover .payment-icon i {
+    color: var(--white-color);
+}
+
+.payment-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--secondary-color-black);
+    margin: 0;
+}
+
+.payment-total {
+    text-align: center;
+    flex: 1;
+    border-left: 1px solid #e0e0e0;
+    padding-left: 2rem;
+}
+
+.total-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--secondary-color-black);
+    margin-bottom: 0.8rem;
+}
+
+.total-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+.total-note {
+    font-size: 0.9rem;
+    color: #999;
+    margin: 0;
+}
+
+/* Advanced Certificate Section */
+.certificate-section {
+    padding: 6rem 0;
+    background-color: #f8f9fa;
+}
+
+.certificate-content {
+    padding-right: 2rem;
+}
+
+.certificate-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color-black);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.certificate-title .highlight {
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.certificate-title .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-image: url('../images/line.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+}
+
+.certificate-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.certificate-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.certificate-features li {
+    font-size: 1rem;
+    color: var(--secondary-color-black);
+    margin-bottom: 1rem;
+    padding-left: 1.8rem;
+    position: relative;
+    font-weight: 500;
+}
+
+.certificate-features li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.certificate-image {
+    text-align: center;
+    padding: 2rem;
+}
+
+.certificate-image img {
+    width: auto;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.certificate-image img:hover {
+    transform: scale(1.05);
 }
