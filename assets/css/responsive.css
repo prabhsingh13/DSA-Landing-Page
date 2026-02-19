@@ -682,3 +682,490 @@
         margin: 0 0.8rem;
     }
 }
+
+
+/* Syllabus Section Responsive */
+@media (max-width: 991px) {
+    .syllabus-section {
+        padding: 4rem 0;
+    }
+
+    .section-title-left {
+        font-size: 2rem;
+    }
+
+    .syllabus-intro-left {
+        font-size: 0.95rem;
+        margin: 0 0 3rem 0;
+    }
+
+    .terms-wrapper {
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .term-item {
+        margin-bottom: 2rem;
+    }
+
+    .term-title {
+        font-size: 1.3rem;
+    }
+
+    .term-description {
+        font-size: 0.9rem;
+    }
+
+    .stats-grid-syllabus {
+        gap: 1.3rem;
+        row-gap: 1.8rem;
+        max-width: 100%;
+    }
+
+    .stat-box-syllabus {
+        padding: 1.6rem 1rem;
+    }
+
+    .stat-icon-circle-syllabus {
+        width: 45px;
+        height: 45px;
+    }
+
+    .stat-icon-circle-syllabus i {
+        font-size: 1.1rem;
+    }
+
+    .stat-value-syllabus {
+        font-size: 2rem;
+    }
+
+    .stat-text-syllabus {
+        font-size: 0.88rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .syllabus-section {
+        padding: 3rem 0;
+    }
+
+    .section-title-left {
+        font-size: 1.8rem;
+    }
+
+    .syllabus-intro-left {
+        font-size: 0.9rem;
+        margin: 0 0 2.5rem 0;
+    }
+
+    .terms-wrapper {
+        margin-bottom: 2.5rem;
+    }
+
+    .term-item {
+        margin-bottom: 1.8rem;
+    }
+
+    .term-title {
+        font-size: 1.2rem;
+    }
+
+    .term-description {
+        font-size: 0.88rem;
+        margin-bottom: 1rem;
+    }
+
+    .module-btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .stats-grid-syllabus {
+        gap: 1.2rem;
+        row-gap: 1.5rem;
+    }
+
+    .stat-box-syllabus {
+        padding: 1.5rem 1rem;
+    }
+
+    .stat-icon-circle-syllabus {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 0.9rem;
+    }
+
+    .stat-icon-circle-syllabus i {
+        font-size: 1rem;
+    }
+
+    .stat-value-syllabus {
+        font-size: 1.8rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .stat-text-syllabus {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .syllabus-section {
+        padding: 2.5rem 0;
+    }
+
+    .section-title-left {
+        font-size: 1.6rem;
+    }
+
+    .section-title-left::after {
+        height: 12px;
+        bottom: -8px;
+    }
+
+    .syllabus-intro-left {
+        font-size: 0.85rem;
+        margin: 0 0 2rem 0;
+    }
+
+    .terms-wrapper {
+        margin-bottom: 2rem;
+    }
+
+    .term-item {
+        margin-bottom: 1.5rem;
+    }
+
+    .term-title {
+        font-size: 1.1rem;
+    }
+
+    .term-description {
+        font-size: 0.85rem;
+    }
+
+    .module-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .stats-grid-syllabus {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stat-box-syllabus {
+        padding: 1.5rem 1rem;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .stat-icon-circle-syllabus {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 0.8rem;
+    }
+
+    .stat-icon-circle-syllabus i {
+        font-size: 1.05rem;
+    }
+
+    .stat-value-syllabus {
+        font-size: 1.8rem;
+    }
+
+    .stat-text-syllabus {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .section-title-left {
+        font-size: 1.5rem;
+    }
+
+    .stat-box-syllabus {
+        padding: 1.3rem 0.9rem;
+    }
+
+    .stat-icon-circle-syllabus {
+        width: 40px;
+        height: 40px;
+    }
+
+    .stat-icon-circle-syllabus i {
+        font-size: 1rem;
+    }
+
+    .stat-value-syllabus {
+        font-size: 1.6rem;
+    }
+
+    .stat-text-syllabus {
+        font-size: 0.82rem;
+    }
+}
+
+
+/* Batch Details Section Responsive */
+@media (max-width: 991px) {
+    .batch-section {
+        padding: 4rem 0;
+    }
+
+    .batch-section .col-lg-4,
+    .batch-section .col-lg-6 {
+        max-width: 100%;
+    }
+
+    .batch-card {
+        margin-bottom: 1.8rem;
+        padding: 1.3rem 1.3rem 1.6rem;
+    }
+
+    .batch-badge {
+        font-size: 0.88rem;
+        padding: 0.55rem 1.3rem;
+        margin: 0 auto 1.1rem;
+    }
+
+    .batch-info p {
+        font-size: 0.86rem;
+        margin-bottom: 0.55rem;
+    }
+
+    .class-card {
+        margin-bottom: 3.5rem;
+        padding: 0 0 2rem 0;
+    }
+
+    .class-image {
+        height: 200px;
+        transform: translateY(-1.5rem);
+    }
+
+    .class-label {
+        font-size: 0.95rem;
+        padding: 0.65rem 2.2rem;
+    }
+
+    .class-content {
+        padding: 0 1.8rem;
+    }
+
+    .class-title {
+        font-size: 1.15rem;
+        margin: -0.5rem 0 1.3rem;
+    }
+
+    .class-features li {
+        font-size: 0.88rem;
+        margin-bottom: 0.65rem;
+    }
+
+    .course-fee {
+        font-size: 1rem;
+    }
+
+    .course-fee .price {
+        font-size: 1.25rem;
+    }
+
+    .btn-enroll {
+        padding: 0.6rem 1.6rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .batch-section {
+        padding: 3rem 0;
+    }
+
+    .batch-card {
+        margin-bottom: 1.5rem;
+        padding: 1.2rem 1.2rem 1.5rem;
+        border-radius: 22px;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .batch-badge {
+        font-size: 0.86rem;
+        padding: 0.5rem 1.2rem;
+        margin: 0 auto 1rem;
+    }
+
+    .batch-info p {
+        font-size: 0.84rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .class-card {
+        margin-bottom: 3rem;
+        padding: 0 0 1.8rem 0;
+        border-radius: 25px;
+    }
+
+    .class-image {
+        height: 180px;
+        transform: translateY(-1.2rem);
+        border-radius: 20px;
+    }
+
+    .class-label {
+        font-size: 0.9rem;
+        padding: 0.6rem 2rem;
+    }
+
+    .class-content {
+        padding: 0 1.5rem;
+    }
+
+    .class-title {
+        font-size: 1.1rem;
+        margin: -0.3rem 0 1.2rem;
+    }
+
+    .class-features li {
+        font-size: 0.86rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .class-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .course-fee {
+        font-size: 0.95rem;
+    }
+
+    .course-fee .price {
+        font-size: 1.2rem;
+    }
+
+    .btn-enroll {
+        width: 100%;
+        padding: 0.65rem 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .batch-section {
+        padding: 2.5rem 0;
+    }
+
+    .batch-card {
+        margin-bottom: 1.3rem;
+        padding: 1.1rem 1.1rem 1.4rem;
+        border-radius: 20px;
+        max-width: 300px;
+    }
+
+    .batch-badge {
+        font-size: 0.84rem;
+        padding: 0.48rem 1.1rem;
+        margin: 0 auto 0.9rem;
+    }
+
+    .batch-info p {
+        font-size: 0.82rem;
+        margin-bottom: 0.48rem;
+    }
+
+    .class-card {
+        margin-bottom: 2.5rem;
+        padding: 0 0 1.5rem 0;
+        border-radius: 20px;
+    }
+
+    .class-image {
+        height: 160px;
+        transform: translateY(-1rem);
+        border-radius: 18px;
+    }
+
+    .class-label {
+        font-size: 0.85rem;
+        padding: 0.55rem 1.8rem;
+    }
+
+    .class-content {
+        padding: 0 1.3rem;
+    }
+
+    .class-title {
+        font-size: 1.05rem;
+        margin: -0.2rem 0 1rem;
+    }
+
+    .class-features li {
+        font-size: 0.84rem;
+        padding-left: 1.2rem;
+        margin-bottom: 0.55rem;
+    }
+
+    .course-fee {
+        font-size: 0.9rem;
+    }
+
+    .course-fee .price {
+        font-size: 1.15rem;
+    }
+
+    .btn-enroll {
+        font-size: 0.88rem;
+        padding: 0.6rem 1.6rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .batch-card {
+        margin-bottom: 1.2rem;
+        padding: 1rem 1rem 1.3rem;
+        max-width: 280px;
+    }
+
+    .batch-badge {
+        font-size: 0.82rem;
+        padding: 0.45rem 1rem;
+        margin: 0 auto 0.8rem;
+    }
+
+    .batch-info p {
+        font-size: 0.8rem;
+        margin-bottom: 0.45rem;
+    }
+
+    .class-card {
+        margin-bottom: 2rem;
+        padding: 0 0 1.3rem 0;
+    }
+
+    .class-image {
+        height: 140px;
+        transform: translateY(-0.8rem);
+    }
+
+    .class-label {
+        font-size: 0.8rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .class-content {
+        padding: 0 1rem;
+    }
+
+    .class-title {
+        font-size: 1rem;
+        margin: -0.1rem 0 0.9rem;
+    }
+
+    .class-features li {
+        font-size: 0.82rem;
+    }
+}
