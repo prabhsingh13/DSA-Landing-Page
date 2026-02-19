@@ -24,3 +24,31 @@ window.addEventListener('scroll', function () {
 
     lastScrollTop = scrollTop;
 });
+
+// Scroll to Top Button
+const scrollTopBtn = document.getElementById('scrollTop');
+
+if (scrollTopBtn) {
+    scrollTopBtn.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Subscribe Form Handler
+const subscribeForm = document.querySelector('.subscribe-form');
+
+if (subscribeForm) {
+    subscribeForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const emailInput = this.querySelector('.subscribe-input');
+        const email = emailInput.value;
+
+        if (email) {
+            alert('Thank you for subscribing! We will keep you updated.');
+            emailInput.value = '';
+        }
+    });
+}

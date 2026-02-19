@@ -1089,7 +1089,7 @@ body {
 /* Advanced Certificate Section */
 .certificate-section {
     padding: 6rem 0;
-    background-color: #f8f9fa;
+    background-color: var(--white-color);
 }
 
 .certificate-content {
@@ -1170,4 +1170,218 @@ body {
 
 .certificate-image img:hover {
     transform: scale(1.05);
+}
+
+
+/* Admission Process Section */
+.admission-section {
+    padding: 6rem 0;
+    background-color: rgb(227, 30, 36, 0.03);
+}
+
+.admission-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+    max-width: 900px;
+    margin: -1rem auto 4rem;
+    line-height: 1.7;
+}
+
+.admission-step {
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    min-height: 220px;
+}
+
+.admission-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.step-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.step-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary-color-black);
+    margin-bottom: 1rem;
+}
+
+.step-description {
+    font-size: 0.95rem;
+    color: #999;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.admission-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.btn-apply-now {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 3.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(227, 30, 36, 0.3);
+}
+
+.btn-apply-now:hover {
+    background-color: #c41a1f;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(227, 30, 36, 0.4);
+}
+
+
+/* Subscribe Section */
+.subscribe-section {
+    padding: 5rem 0;
+    background-color: var(--secondary-color-black);
+    text-align: center;
+}
+
+.subscribe-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.subscribe-description {
+    font-size: 1rem;
+    color: #999;
+    margin-bottom: 2.5rem;
+}
+
+.subscribe-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0;
+}
+
+.subscribe-input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.subscribe-input::placeholder {
+    color: #999;
+}
+
+.subscribe-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-btn i {
+    font-size: 1.2rem;
+}
+
+.subscribe-btn:hover {
+    background-color: #c41a1f;
+}
+
+/* Footer Section */
+.footer-section {
+    padding: 3rem 0 1.5rem;
+    background-color: var(--white-color);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.footer-link {
+    color: var(--secondary-color-black);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+}
+
+.scroll-top {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(227, 30, 36, 0.3);
+}
+
+.scroll-top i {
+    font-size: 1.2rem;
+}
+
+.scroll-top:hover {
+    background-color: #c41a1f;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(227, 30, 36, 0.4);
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #999;
+    margin: 0;
 }

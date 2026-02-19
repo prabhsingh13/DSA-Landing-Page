@@ -1454,3 +1454,415 @@
         padding-right: 0.5rem;
     }
 }
+
+
+/* Admission Process Section Responsive */
+@media (max-width: 991px) {
+    .admission-section {
+        padding: 4rem 0;
+    }
+
+    .admission-subtitle {
+        font-size: 0.95rem;
+        margin: -0.5rem auto 3rem;
+        padding: 0 1rem;
+    }
+
+    .admission-step {
+        padding: 2rem 1.5rem;
+        min-height: 200px;
+    }
+
+    .step-number {
+        font-size: 1.4rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .step-title {
+        font-size: 1.15rem;
+    }
+
+    .step-description {
+        font-size: 0.9rem;
+    }
+
+    .admission-cta {
+        margin-top: 2.5rem;
+    }
+
+    .btn-apply-now {
+        padding: 0.9rem 3rem;
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .admission-section {
+        padding: 3rem 0;
+    }
+
+    .admission-subtitle {
+        font-size: 0.9rem;
+        margin: -0.5rem auto 2.5rem;
+    }
+
+    .admission-step {
+        padding: 1.8rem 1.3rem;
+        margin-bottom: 1.5rem;
+        min-height: 180px;
+    }
+
+    .step-number {
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .step-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.9rem;
+    }
+
+    .step-description {
+        font-size: 0.88rem;
+    }
+
+    .admission-cta {
+        margin-top: 2rem;
+    }
+
+    .btn-apply-now {
+        padding: 0.85rem 2.8rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .admission-section {
+        padding: 2.5rem 0;
+    }
+
+    .admission-subtitle {
+        font-size: 0.85rem;
+        margin: -0.5rem auto 2rem;
+    }
+
+    .admission-step {
+        padding: 1.5rem 1.2rem;
+        margin-bottom: 1.3rem;
+        min-height: auto;
+    }
+
+    .step-number {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .step-title {
+        font-size: 1.05rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .step-description {
+        font-size: 0.85rem;
+    }
+
+    .admission-cta {
+        margin-top: 1.5rem;
+    }
+
+    .btn-apply-now {
+        width: 100%;
+        max-width: 350px;
+        padding: 0.8rem 2.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .admission-step {
+        padding: 1.3rem 1rem;
+    }
+
+    .step-number {
+        font-size: 1.15rem;
+    }
+
+    .step-title {
+        font-size: 1rem;
+    }
+
+    .step-description {
+        font-size: 0.82rem;
+    }
+
+    .btn-apply-now {
+        padding: 0.75rem 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Subscribe Section Responsive */
+@media (max-width: 991px) {
+    .subscribe-section {
+        padding: 4rem 0;
+    }
+
+    .subscribe-title {
+        font-size: 2rem;
+    }
+
+    .subscribe-description {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+
+    .subscribe-form {
+        max-width: 550px;
+    }
+
+    .subscribe-input {
+        padding: 0.9rem 1.3rem;
+        font-size: 0.95rem;
+    }
+
+    .subscribe-btn {
+        padding: 0.9rem 1.8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .subscribe-section {
+        padding: 3rem 0;
+    }
+
+    .subscribe-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .subscribe-description {
+        font-size: 0.9rem;
+        margin-bottom: 1.8rem;
+        padding: 0 1rem;
+    }
+
+    .subscribe-form {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .subscribe-input {
+        padding: 0.85rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .subscribe-btn {
+        padding: 0.85rem 1.5rem;
+    }
+
+    .subscribe-btn i {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .subscribe-section {
+        padding: 2.5rem 0;
+    }
+
+    .subscribe-title {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .subscribe-description {
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .subscribe-input {
+        border-radius: 8px;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .subscribe-btn {
+        border-radius: 8px;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Footer Section Responsive */
+@media (max-width: 991px) {
+    .footer-section {
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .footer-logo img {
+        width: 140px;
+    }
+
+    .footer-nav {
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-link {
+        font-size: 0.95rem;
+    }
+
+    .scroll-top {
+        width: 45px;
+        height: 45px;
+    }
+
+    .scroll-top i {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-section {
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .footer-content {
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 180px;
+    }
+
+    .footer-nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem 2rem;
+        justify-items: center;
+    }
+
+    .footer-link {
+        font-size: 1.05rem;
+        font-weight: 600;
+    }
+
+    .scroll-top {
+        width: 55px;
+        height: 55px;
+    }
+
+    .scroll-top i {
+        font-size: 1.3rem;
+    }
+
+    .copyright {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-section {
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .footer-content {
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-logo img {
+        width: 200px;
+    }
+
+    .footer-nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.8rem 2.5rem;
+        justify-items: center;
+        padding: 0 1rem;
+    }
+
+    .footer-link {
+        font-size: 1.1rem;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .scroll-top {
+        width: 60px;
+        height: 60px;
+    }
+
+    .scroll-top i {
+        font-size: 1.4rem;
+    }
+
+    .footer-bottom {
+        margin-top: 0.5rem;
+    }
+
+    .copyright {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 375px) {
+    .footer-section {
+        padding: 2rem 0 1.3rem;
+    }
+
+    .footer-logo img {
+        width: 180px;
+    }
+
+    .footer-nav {
+        gap: 1.5rem 2rem;
+    }
+
+    .footer-link {
+        font-size: 1.05rem;
+    }
+
+    .scroll-top {
+        width: 55px;
+        height: 55px;
+    }
+
+    .scroll-top i {
+        font-size: 1.3rem;
+    }
+
+    .copyright {
+        font-size: 0.85rem;
+    }
+}
