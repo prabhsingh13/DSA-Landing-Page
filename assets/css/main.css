@@ -8,6 +8,7 @@
 :root {
     /* Background Colour Variables */
     --primary-color: #e31e24;
+    --primary-section-bg: #e31e2408;
     --primary-color-light: #9C0E20;
     --secondary-color-black: #000;
     --bg-blue: #2572EA;
@@ -553,7 +554,7 @@ body {
 /* Why DSA Section */
 .why-dsa-section {
     padding: 6rem 0;
-    background-color: rgb(227, 30, 36, 0.03);
+    background-color: var(--primary-section-bg);
 }
 
 .section-subtitle {
@@ -784,7 +785,7 @@ body {
 /* Batch Details Section */
 .batch-section {
     padding: 6rem 0;
-    background-color: rgb(227, 30, 36, 0.03);
+    background-color: var(--primary-section-bg);
 }
 
 .batch-section .row {
@@ -1177,7 +1178,7 @@ body {
 /* Admission Process Section */
 .admission-section {
     padding: 6rem 0;
-    background-color: rgb(227, 30, 36, 0.03);
+    background-color: var(--primary-section-bg);
 }
 
 .admission-subtitle {
@@ -1385,7 +1386,7 @@ body {
 /* Instructors Section */
 .instructors-section {
     padding: 6rem 0;
-    background-color: rgb(227, 30, 36, 0.03);
+    background-color: var(--primary-section-bg);
 }
 
 .instructors-subtitle {
@@ -1528,6 +1529,11 @@ body {
     width: 80%;
 }
 
+.testimonial-user:hover {
+    background-color: #f0f0f0;
+    /* transform: translateX(5px); */
+}
+
 .testimonial-user.active {
     background-color: #f8f9fa;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
@@ -1619,6 +1625,7 @@ body {
 
 .testimonial-body {
     flex: 1;
+    transition: opacity 0.3s ease;
 }
 
 .testimonial-header {
@@ -1704,6 +1711,263 @@ body {
     color: #666;
     line-height: 1.7;
     margin: 0;
+}
+
+
+/* Taiyari Job Ki Section */
+.taiyari-section {
+    padding: 6rem 0;
+    background-color: var(--primary-section-bg);
+}
+
+.journey-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem 0 6rem;
+    flex-wrap: wrap;
+}
+
+.journey-item {
+    text-align: center;
+}
+
+.journey-card {
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.journey-card.dashed {
+    border: 3px dashed #ddd;
+    padding: 10px;
+}
+
+.journey-card.solid {
+    border: 3px solid var(--primary-color);
+    padding: 10px;
+}
+
+.journey-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.journey-label {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.4;
+}
+
+.arrow-connector {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 0 1rem;
+}
+
+.mock-interview-section {
+    margin-top: 5rem;
+}
+
+.mock-card {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mock-badge {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1rem;
+}
+
+.mock-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.mock-video {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.mock-video img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: white;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-button i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-left: 5px;
+}
+
+.taiyari-banner {
+    background-color: var(--primary-color);
+    padding: 3rem 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.taiyari-banner h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+
+/* Taiyari Job Ki Result Section */
+/* Result Section */
+.result-section {
+    padding: 6rem 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.result-carousel {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.result-profiles-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.result-profiles {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.profile-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding-bottom: 5rem;
+}
+
+/* Profile Card */
+.profile-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Circular Image */
+.profile-image {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Floating Name Tag */
+.profile-name {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 0.45rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Side Badge */
+.studio-badge {
+    position: absolute;
+    right: -25px;
+    top: 65%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    color: #000;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Indicators */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 4rem;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    width: 40px;
+    border-radius: 20px;
+    background: var(--primary-color);
+}
+
+.indicator:hover {
+    background: #ff6b8a;
 }
 
 

@@ -1440,10 +1440,6 @@
 
 /* Ensure proper spacing on all sections */
 @media (max-width: 576px) {
-    /* section {
-        overflow-x: hidden;
-    } */
-
     .row {
         margin-left: -0.5rem;
         margin-right: -0.5rem;
@@ -1862,49 +1858,30 @@
 
 
 /* What our Student Say Section Responsive */
+
+
 @media (max-width: 991px) {
+
     .testimonials-section {
-        padding: 4rem 0;
+        padding: 3.5rem 0;
     }
 
-    .testimonial-sidebar {
-        margin-bottom: 3rem;
-    }
-
-    .testimonial-content {
-        padding: 2.5rem;
-    }
-
-    .quote-icon {
-        width: 65px;
-        height: 65px;
-    }
-
-    .quote-icon i {
-        font-size: 1.6rem;
-    }
-
-    .testimonial-title {
-        font-size: 1.6rem;
-    }
-
-    .testimonial-text {
-        font-size: 0.95rem;
-    }
-}
-
-@media (max-width: 767px) {
-    .testimonials-section {
-        padding: 3rem 0;
-    }
-
+    /* ---- Sidebar ---- */
     .testimonial-sidebar {
         padding-left: 1rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .testimonial-sidebar::before {
+        left: -8px;
+        width: 3px;
     }
 
     .testimonial-user {
-        padding: 1.2rem 0.8rem;
+        width: 100%;
+        padding: 0.9rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 16px;
     }
 
     .testimonial-user img {
@@ -1912,84 +1889,65 @@
         height: 55px;
     }
 
+    .testimonial-user.active {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .testimonial-user.active::before {
+        height: 50%;
+    }
+
     .user-info h4 {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .rating i {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 
+    /* ---- Testimonial Card ---- */
     .testimonial-content {
-        padding: 2rem;
+        position: relative;
+        padding: 2.5rem 2rem 2rem 2rem;
+        margin-top: 2rem;
+        border-radius: 22px;
     }
 
+    .testimonial-inner {
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+
+    /* ---- Quote Icon ---- */
     .quote-icon {
+        position: absolute;
         width: 60px;
         height: 60px;
+        top: -28px;
+        left: 30px;
+        transform: none;
+    }
+
+    .quote-icon::after {
+        width: 85px;
+        height: 85px;
     }
 
     .quote-icon i {
         font-size: 1.4rem;
     }
 
-    .testimonial-title {
-        font-size: 1.4rem;
-    }
-
-    .testimonial-rating i {
-        font-size: 1.1rem;
-    }
-
-    .testimonial-text {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .testimonials-section {
-        padding: 2.5rem 0;
-    }
-
-    .testimonial-sidebar {
-        padding-left: 0.8rem;
-        margin-bottom: 2rem;
-    }
-
-    .testimonial-user {
-        padding: 1rem 0.5rem;
-        margin-bottom: 0.8rem;
-    }
-
-    .testimonial-user img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .user-info h4 {
-        font-size: 0.9rem;
-    }
-
-    .testimonial-content {
-        padding: 1.5rem;
-    }
-
-    .quote-icon {
-        width: 55px;
-        height: 55px;
-        margin-bottom: 1.5rem;
-    }
-
-    .quote-icon i {
-        font-size: 1.2rem;
+    /* ---- Header ---- */
+    .testimonial-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+        margin-bottom: 0.9rem;
     }
 
     .testimonial-title {
-        font-size: 1.2rem;
-    }
-
-    .testimonial-rating {
-        margin-bottom: 1.2rem;
+        font-size: 1.55rem;
+        line-height: 1.3;
     }
 
     .testimonial-rating i {
@@ -1997,7 +1955,67 @@
     }
 
     .testimonial-text {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .testimonial-sidebar {
+        padding-left: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .testimonial-sidebar::before,
+    .testimonial-user.active::before {
+        display: none;
+    }
+
+    .testimonial-user {
+        width: 100%;
+        padding: 0.9rem 0.8rem;
+        margin-bottom: 0.7rem;
+    }
+
+    /* -------- Content Card -------- */
+    .testimonial-content {
+        position: relative;
+        padding: 3rem 1.5rem 1.5rem;
+        margin-top: 2rem;
+        border-radius: 18px;
+    }
+
+    .quote-icon {
+        position: absolute;
+        top: -30px;
+        left: 20px;
+        width: 60px;
+        height: 60px;
+        transform: none;
+    }
+
+    .quote-icon::after {
+        width: 80px;
+        height: 80px;
+    }
+
+    .quote-icon i {
+        font-size: 1.4rem;
+    }
+
+    .testimonial-title {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .testimonial-rating i {
+        font-size: 0.95rem;
     }
 }
 
@@ -2079,6 +2097,226 @@
         font-size: 0.85rem;
     }
 }
+
+
+/* Taiyari Job Ki Section Responsive */
+@media (max-width: 991px) {
+    .taiyari-section {
+        padding: 4rem 0;
+    }
+
+    .journey-card {
+        width: 240px;
+        height: 240px;
+    }
+
+    .arrow-connector {
+        font-size: 1.5rem;
+        margin: 0 0.5rem;
+    }
+
+    .mock-video img {
+        height: 220px;
+    }
+
+    .taiyari-banner h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .taiyari-section {
+        padding: 3rem 0;
+    }
+
+    .journey-flow {
+        gap: 1rem;
+        margin: 3rem 0 4rem;
+    }
+
+    .journey-card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .journey-label {
+        font-size: 1rem;
+    }
+
+    .arrow-connector {
+        display: none;
+    }
+
+    .mock-interview-section {
+        margin-top: 3rem;
+    }
+
+    .mock-video img {
+        height: 200px;
+    }
+
+    .taiyari-banner {
+        padding: 2rem 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .taiyari-banner h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 576px) {
+    .taiyari-section {
+        padding: 2.5rem 0;
+    }
+
+    .journey-card {
+        width: 180px;
+        height: 180px;
+    }
+
+    .journey-label {
+        font-size: 0.9rem;
+    }
+
+    .mock-badge {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .mock-title {
+        font-size: 1rem;
+    }
+
+    .mock-video img {
+        height: 180px;
+    }
+
+    .play-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .play-button i {
+        font-size: 1.2rem;
+    }
+
+    .taiyari-banner {
+        padding: 1.5rem 1rem;
+    }
+
+    .taiyari-banner h2 {
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+    }
+}
+
+
+/* Taiyari Job Ki Result Section Responsive */
+@media (max-width: 991px) {
+    .result-section {
+        padding: 4rem 0;
+    }
+
+    .profile-slide {
+        gap: 4rem;
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 767px) {
+    .result-section {
+        padding: 3rem 0;
+    }
+
+    .result-carousel {
+        margin-top: 2rem;
+    }
+
+    .profile-slide {
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-name {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .studio-badge {
+        right: -20px;
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .carousel-indicators {
+        margin-top: 3rem;
+        gap: 0.6rem;
+    }
+
+    .indicator {
+        width: 8px;
+        height: 8px;
+    }
+
+    .indicator.active {
+        width: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .result-section {
+        padding: 2.5rem 0;
+    }
+
+    .profile-slide {
+        gap: 1.5rem;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-name {
+        font-size: 0.7rem;
+        padding: 0.35rem 0.8rem;
+        bottom: 10px;
+        left: 0;
+    }
+
+    .studio-badge {
+        right: -15px;
+        font-size: 0.65rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .carousel-indicators {
+        margin-top: 2rem;
+        gap: 0.5rem;
+    }
+
+    .indicator {
+        width: 7px;
+        height: 7px;
+    }
+
+    .indicator.active {
+        width: 25px;
+    }
+}
+
 
 
 /* Subscribe Section Responsive */
