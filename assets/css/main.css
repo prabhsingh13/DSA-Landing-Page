@@ -638,7 +638,8 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: left;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
     color: var(--secondary-color-black);
     position: relative;
     display: inline-block;
@@ -1248,6 +1249,416 @@ body {
     background-color: #c41a1f;
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(227, 30, 36, 0.4);
+}
+
+
+/* Student Life Section */
+.student-life-section {
+    padding: 6rem 0;
+    background-color: var(--white-color);
+}
+
+.student-life-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+    max-width: 900px;
+    margin: -1rem auto 4rem;
+    line-height: 1.7;
+}
+
+.student-life-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.grid-item {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Custom layout like Figma */
+.item-1 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item-2 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item-3 {
+    grid-column: span 1;
+    grid-row: span 2;
+    /* Taller image */
+}
+
+.item-4 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item-5 {
+    grid-column: span 2;
+    /* Wide bottom image */
+    grid-row: span 1;
+}
+
+.item-6 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+/* Upskilling Quote Section */
+.upskilling-section {
+    padding: 6rem 0;
+    background-color: var(--white-color);
+}
+
+.upskilling-content {
+    padding-right: 2rem;
+}
+
+.upskilling-quote {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color-black);
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.quote-highlight {
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.quote-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-image: url('../images/line.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+}
+
+.upskilling-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.upskilling-image {
+    text-align: center;
+    padding: 2rem;
+}
+
+.upskilling-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+
+/* Instructors Section */
+.instructors-section {
+    padding: 6rem 0;
+    background-color: rgb(227, 30, 36, 0.03);
+}
+
+.instructors-subtitle {
+    text-align: left;
+    font-size: 1rem;
+    color: #999;
+    max-width: 100%;
+    margin: 0 0 4rem 0;
+    line-height: 1.7;
+}
+
+.instructors-section .row {
+    justify-content: center;
+}
+
+.instructors-section .col-lg-4 {
+    max-width: 320px;
+}
+
+.instructor-card {
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    height: 100%;
+}
+
+.instructor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.instructor-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5rem;
+    position: relative;
+}
+
+.instructor-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.linkedin-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #0077b5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    border: 3px solid var(--white-color);
+}
+
+.linkedin-badge:hover {
+    background-color: #005885;
+    transform: scale(1.1);
+}
+
+.instructor-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--secondary-color-black);
+    margin-bottom: 0.8rem;
+}
+
+.instructor-title {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+    min-height: 45px;
+}
+
+.instructor-logo {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+.instructor-logo img {
+    max-height: 100%;
+    max-width: 130px;
+    object-fit: contain;
+}
+
+.instructor-bio {
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* What our Student Say Section */
+.testimonials-section {
+    padding: 6rem 0;
+    background-color: var(--white-color);
+}
+
+.testimonial-sidebar {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.testimonial-sidebar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 33%, #e0e0e0 33%, #e0e0e0 100%);
+}
+
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.testimonial-user.active {
+    background-color: #f8f9fa;
+}
+
+.testimonial-user:hover {
+    background-color: #f8f9fa;
+}
+
+.testimonial-user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary-color-black);
+    margin-bottom: 0.3rem;
+}
+
+.rating {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.rating i {
+    color: #ffc107;
+    font-size: 0.85rem;
+}
+
+.testimonial-content {
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    padding: 3rem;
+    position: relative;
+}
+
+.quote-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.quote-icon i {
+    color: var(--white-color);
+    font-size: 1.8rem;
+}
+
+.testimonial-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondary-color-black);
+    margin-bottom: 1rem;
+}
+
+.testimonial-rating {
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-rating i {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* What Makes Our Students Industry Ready Section */
+.industry-ready-section {
+    padding: 6rem 0;
+    background-color: var(--white-color);
+}
+
+.industry-image {
+    text-align: center;
+    padding: 2rem;
+}
+
+.industry-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.industry-features {
+    padding-left: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.feature-item:last-child {
+    margin-bottom: 0;
+}
+
+.feature-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.feature-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
 }
 
 

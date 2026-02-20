@@ -1602,6 +1602,485 @@
 }
 
 
+/* Upskilling Quote Section Responsive */
+@media (max-width: 991px) {
+    .upskilling-section {
+        padding: 4rem 0;
+    }
+
+    .upskilling-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .upskilling-quote {
+        font-size: 2rem;
+    }
+
+    .upskilling-description {
+        font-size: 0.95rem;
+    }
+
+    .upskilling-image {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .upskilling-section {
+        padding: 3rem 0;
+    }
+
+    .upskilling-quote {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .quote-highlight::after {
+        height: 10px;
+        bottom: -3px;
+    }
+
+    .upskilling-description {
+        font-size: 0.9rem;
+    }
+
+    .upskilling-image {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .upskilling-section {
+        padding: 2.5rem 0;
+    }
+
+    .upskilling-quote {
+        font-size: 1.6rem;
+    }
+
+    .quote-highlight::after {
+        height: 8px;
+    }
+
+    .upskilling-description {
+        font-size: 0.85rem;
+    }
+
+    .upskilling-image img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .upskilling-quote {
+        font-size: 1.5rem;
+    }
+
+    .upskilling-description {
+        font-size: 0.82rem;
+    }
+}
+
+
+/* Instructors Section Responsive */
+@media (max-width: 991px) {
+    .instructors-section {
+        padding: 4rem 0;
+    }
+
+    .instructors-subtitle {
+        font-size: 0.95rem;
+        margin: 0 0 3rem 0;
+    }
+
+    .instructors-section .col-lg-4 {
+        max-width: 100%;
+    }
+
+    .instructors-section .col-md-6 {
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .instructor-card {
+        padding: 1.8rem 1.5rem;
+    }
+
+    .instructor-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .linkedin-badge {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .instructor-name {
+        font-size: 1.1rem;
+    }
+
+    .instructor-title {
+        font-size: 0.88rem;
+        min-height: auto;
+    }
+
+    .instructor-logo {
+        height: 42px;
+    }
+
+    .instructor-bio {
+        font-size: 0.86rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .instructors-section {
+        padding: 3rem 0;
+    }
+
+    .instructors-subtitle {
+        font-size: 0.9rem;
+        margin: 0 0 2.5rem 0;
+    }
+
+    .instructors-section .col-md-6 {
+        max-width: 100%;
+    }
+
+    .instructor-card {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .instructor-image {
+        width: 110px;
+        height: 110px;
+    }
+
+    .linkedin-badge {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+
+    .instructor-name {
+        font-size: 1.2rem;
+    }
+
+    .instructor-title {
+        font-size: 0.9rem;
+    }
+
+    .instructor-logo {
+        height: 45px;
+    }
+
+    .instructor-bio {
+        font-size: 0.88rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .instructors-section {
+        padding: 2.5rem 0;
+    }
+
+    .instructors-subtitle {
+        font-size: 0.85rem;
+        margin: 0 0 2rem 0;
+    }
+
+    .instructor-card {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+        max-width: 100%;
+    }
+
+    .instructor-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .linkedin-badge {
+        width: 30px;
+        height: 30px;
+        font-size: 0.75rem;
+        border: 2px solid var(--white-color);
+    }
+
+    .instructor-name {
+        font-size: 1.15rem;
+    }
+
+    .instructor-title {
+        font-size: 0.88rem;
+    }
+
+    .instructor-logo {
+        height: 42px;
+    }
+
+    .instructor-logo img {
+        max-width: 140px;
+    }
+
+    .instructor-bio {
+        font-size: 0.86rem;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 375px) {
+    .instructor-card {
+        padding: 1.8rem 1.3rem;
+    }
+
+    .instructor-image {
+        width: 95px;
+        height: 95px;
+    }
+
+    .instructor-name {
+        font-size: 1.1rem;
+    }
+
+    .instructor-title {
+        font-size: 0.85rem;
+    }
+
+    .instructor-bio {
+        font-size: 0.84rem;
+    }
+}
+
+
+/* What our Student Say Section Responsive */
+@media (max-width: 991px) {
+    .testimonials-section {
+        padding: 4rem 0;
+    }
+
+    .testimonial-sidebar {
+        margin-bottom: 3rem;
+    }
+
+    .testimonial-content {
+        padding: 2.5rem;
+    }
+
+    .quote-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .quote-icon i {
+        font-size: 1.6rem;
+    }
+
+    .testimonial-title {
+        font-size: 1.6rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonials-section {
+        padding: 3rem 0;
+    }
+
+    .testimonial-sidebar {
+        padding-left: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .testimonial-user {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .testimonial-user img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .user-info h4 {
+        font-size: 0.95rem;
+    }
+
+    .rating i {
+        font-size: 0.8rem;
+    }
+
+    .testimonial-content {
+        padding: 2rem;
+    }
+
+    .quote-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .quote-icon i {
+        font-size: 1.4rem;
+    }
+
+    .testimonial-title {
+        font-size: 1.4rem;
+    }
+
+    .testimonial-rating i {
+        font-size: 1.1rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonials-section {
+        padding: 2.5rem 0;
+    }
+
+    .testimonial-sidebar {
+        padding-left: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-user {
+        padding: 1rem 0.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .testimonial-user img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .user-info h4 {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-content {
+        padding: 1.5rem;
+    }
+
+    .quote-icon {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 1.5rem;
+    }
+
+    .quote-icon i {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-title {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-rating {
+        margin-bottom: 1.2rem;
+    }
+
+    .testimonial-rating i {
+        font-size: 1rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* What Makes Our Students Industry Ready Section Responsive */
+@media (max-width: 991px) {
+    .industry-ready-section {
+        padding: 4rem 0;
+    }
+
+    .industry-image {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .industry-features {
+        padding-left: 0;
+    }
+
+    .feature-item {
+        gap: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .feature-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .feature-content p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .industry-ready-section {
+        padding: 3rem 0;
+    }
+
+    .industry-image {
+        padding: 1rem;
+    }
+
+    .feature-item {
+        gap: 1rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .feature-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .industry-ready-section {
+        padding: 2.5rem 0;
+    }
+
+    .industry-image img {
+        max-width: 100%;
+    }
+
+    .feature-item {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .feature-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .feature-content p {
+        font-size: 0.85rem;
+    }
+}
+
+
 /* Subscribe Section Responsive */
 @media (max-width: 991px) {
     .subscribe-section {
@@ -1864,5 +2343,100 @@
 
     .copyright {
         font-size: 0.85rem;
+    }
+}
+
+
+/* Student Life Section Responsive */
+@media (max-width: 991px) {
+    .student-life-section {
+        padding: 4rem 0;
+    }
+
+    .student-life-subtitle {
+        font-size: 0.95rem;
+        margin: -0.5rem auto 3rem;
+        padding: 0 1rem;
+    }
+
+    .student-life-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px;
+        gap: 1.5rem;
+    }
+
+    .item-3 {
+        grid-row: span 2;
+    }
+
+    .item-5 {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 767px) {
+    .student-life-section {
+        padding: 3rem 0;
+    }
+
+    .student-life-subtitle {
+        font-size: 0.9rem;
+        margin: -0.5rem auto 2.5rem;
+    }
+
+    .student-life-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 180px;
+        gap: 1.2rem;
+    }
+
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4,
+    .item-6,
+    .item-7 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .item-5 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .student-life-section {
+        padding: 2.5rem 0;
+    }
+
+    .student-life-subtitle {
+        font-size: 0.85rem;
+        margin: -0.5rem auto 2rem;
+    }
+
+    .student-life-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+        gap: 1rem;
+    }
+
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4,
+    .item-5,
+    .item-6,
+    .item-7 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 375px) {
+    .student-life-grid {
+        grid-auto-rows: 200px;
+        gap: 0.8rem;
     }
 }
