@@ -2215,18 +2215,21 @@
 
 
 /* Taiyari Job Ki Result Section Responsive */
-@media (max-width: 991px) {
+@media (max-width: 1159px) {
     .result-section {
         padding: 4rem 0;
     }
 
     .profile-slide {
-        gap: 4rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        padding-bottom: 4rem;
     }
 
     .profile-image {
-        width: 220px;
-        height: 220px;
+        width: 280px;
+        height: 280px;
     }
 }
 
@@ -2240,38 +2243,26 @@
     }
 
     .profile-slide {
-        gap: 2rem;
-        flex-wrap: wrap;
+        gap: 2.5rem;
+        padding-bottom: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .profile-image {
-        width: 200px;
-        height: 200px;
+        width: 260px;
+        height: 260px;
     }
 
     .profile-name {
-        font-size: 0.75rem;
-        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+        padding: 0.5rem 1.2rem;
     }
 
     .studio-badge {
         right: -20px;
-        font-size: 0.7rem;
-        padding: 0.3rem 0.6rem;
-    }
-
-    .carousel-indicators {
-        margin-top: 3rem;
-        gap: 0.6rem;
-    }
-
-    .indicator {
-        width: 8px;
-        height: 8px;
-    }
-
-    .indicator.active {
-        width: 30px;
+        font-size: 0.75rem;
+        padding: 0.35rem 0.7rem;
     }
 }
 
@@ -2281,39 +2272,24 @@
     }
 
     .profile-slide {
-        gap: 1.5rem;
+        gap: 2rem;
+        padding-bottom: 2.5rem;
     }
 
     .profile-image {
-        width: 180px;
-        height: 180px;
+        width: 240px;
+        height: 240px;
     }
 
     .profile-name {
-        font-size: 0.7rem;
-        padding: 0.35rem 0.8rem;
-        bottom: 10px;
-        left: 0;
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
     }
 
     .studio-badge {
-        right: -15px;
-        font-size: 0.65rem;
-        padding: 0.25rem 0.5rem;
-    }
-
-    .carousel-indicators {
-        margin-top: 2rem;
-        gap: 0.5rem;
-    }
-
-    .indicator {
-        width: 7px;
-        height: 7px;
-    }
-
-    .indicator.active {
-        width: 25px;
+        right: -18px;
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
     }
 }
 
@@ -2897,7 +2873,7 @@
 
 
 /* Internship Life @ DSA Section Responsive */
-@media (max-width: 991px) {
+@media (max-width: 1159px) {
     .internship-life-section {
         padding: 4rem 0;
     }
@@ -2925,43 +2901,60 @@
     }
 }
 
+/* Stack images vertically below 992px */
+@media (max-width: 991px) {
+    .life-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .life-image-small {
+        width: 100%;
+        max-width: 350px;
+        height: 220px;
+    }
+
+    .life-image-large {
+        width: 100%;
+        max-width: 450px;
+        height: 300px;
+        transform: scale(1);
+    }
+}
+
 @media (max-width: 767px) {
     .internship-life-section {
         padding: 3rem 0;
     }
 
+    .life-slide {
+        padding: 1rem 0.5rem;
+    }
+
     .life-images {
         gap: 1rem;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
 
     .life-image-small {
-        width: 180px;
-        height: 130px;
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
     }
 
     .life-image-large {
         width: 100%;
         max-width: 400px;
-        height: 250px;
-        order: -1;
+        height: 280px;
+        order: 0;
+        transform: scale(1);
     }
 
     .life-caption {
         font-size: 1.1rem;
-    }
-
-    .life-carousel-indicators {
-        gap: 0.6rem;
-    }
-
-    .life-indicator {
-        width: 10px;
-        height: 10px;
-    }
-
-    .life-indicator.active {
-        width: 40px;
+        padding: 0 1rem;
     }
 }
 
@@ -2971,6 +2964,7 @@
     }
 
     .life-slide {
+        padding: 0.5rem;
         padding-bottom: 2rem;
     }
 
@@ -2998,5 +2992,30 @@
 
     .life-indicator.active {
         width: 30px;
+    }
+}
+
+
+/* Fix Internship Life Mobile Layout */
+@media (max-width: 576px) {
+    .life-images {
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+
+    .life-image-small {
+        width: 100% !important;
+        max-width: 280px !important;
+        height: 180px !important;
+    }
+
+    .life-image-large {
+        width: 100% !important;
+        max-width: 350px !important;
+        height: 240px !important;
+    }
+
+    .life-caption {
+        padding: 0 0.5rem !important;
     }
 }
