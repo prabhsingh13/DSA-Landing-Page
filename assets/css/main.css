@@ -1870,16 +1870,20 @@ body {
 .result-carousel {
     margin-top: 3rem;
     position: relative;
+    min-height: 400px;
 }
 
 .result-profiles-wrapper {
     overflow: hidden;
     width: 100%;
+    min-height: 400px;
 }
 
 .result-profiles {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    min-height: 400px;
+    transform: translateX(0);
 }
 
 .profile-slide {
@@ -1968,6 +1972,310 @@ body {
 
 .indicator:hover {
     background: #ff6b8a;
+}
+
+
+/* Placement Partners Section */
+.placement-partners-section {
+    padding: 6rem 0;
+    background-color: var(--white-color);
+    text-align: center;
+}
+
+.partners-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.partner-logo {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+}
+
+.partner-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.partner-logo:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+
+/* 5 Reasons to Join DSA Section */
+.reasons-section {
+    padding: 6rem 0;
+    background-color: var(--white-color);
+    text-align: center;
+}
+
+.reasons-section .section-title {
+    color: #333;
+}
+
+.reasons-description {
+    font-size: 1rem;
+    color: #999;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 1rem auto 2rem;
+    padding: 0 1rem;
+}
+
+.reasons-diagram {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.reasons-diagram img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* DSA Internship Program Section */
+.internship-section {
+    padding: 6rem 0;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.internship-section .section-title {
+    color: var(--white-color);
+    margin-bottom: 4rem;
+}
+
+.internship-programs {
+    margin-bottom: 4rem;
+}
+
+.program-card {
+    margin-bottom: 2rem;
+}
+
+.program-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.program-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.program-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-overlay:hover {
+    background-color: white;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-overlay i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-left: 5px;
+}
+
+.internship-types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.internship-type-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 2rem;
+    border-radius: 15px;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.internship-type-card:hover {
+    transform: translateY(-5px);
+}
+
+.internship-type-card.yellow {
+    background-color: #ffd966;
+}
+
+.internship-type-card.blue {
+    background-color: #9ed9f7;
+}
+
+.internship-type-card.pink {
+    background-color: #ffb3c1;
+}
+
+.type-icon {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.type-content h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.type-content p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+}
+
+
+/* Internship Life @ DSA Section */
+.internship-life-section {
+    padding: 6rem 0;
+    background-color: var(--white-color);
+    text-align: center;
+}
+
+.life-carousel {
+    margin-top: 4rem;
+    position: relative;
+}
+
+.life-carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.life-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.life-slide {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.life-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.life-image-small {
+    width: 280px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.life-image-large {
+    width: 400px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.life-image-small img,
+.life-image-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.life-caption {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.life-carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 2rem;
+}
+
+.life-indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #ffc0cb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.life-indicator.active {
+    width: 50px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+.life-indicator:hover {
+    background-color: #ff6b8a;
 }
 
 
