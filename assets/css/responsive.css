@@ -107,6 +107,16 @@
         margin-bottom: 10rem;
     }
 
+    .hero-video-wrapper {
+        margin-top: 3rem;
+        gap: 1.2rem;
+    }
+
+    .video-badge {
+        font-size: 0.9rem;
+        padding: 0.9rem 2rem;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
@@ -193,6 +203,16 @@
         min-height: 70vh;
         padding: 2.5rem 0 14rem;
         margin-bottom: 12rem;
+    }
+
+    .hero-video-wrapper {
+        margin-top: 2.5rem;
+        gap: 1rem;
+    }
+
+    .video-badge {
+        font-size: 0.85rem;
+        padding: 0.8rem 1.8rem;
     }
 
     .hero-title {
@@ -318,6 +338,21 @@
         min-height: 65vh;
         padding: 2rem 0 16rem;
         margin-bottom: 14rem;
+    }
+
+    .hero-video-wrapper {
+        margin-top: 2rem;
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    .video-badge {
+        font-size: 0.8rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .video-badge i {
+        font-size: 1.1rem;
     }
 
     .hero-title {
@@ -461,7 +496,7 @@
     }
 
     .who-section {
-        padding: 3rem 0 4rem;
+        padding: 5rem 0 4rem;
     }
 
     .section-title {
@@ -491,7 +526,7 @@
     }
 
     .who-section {
-        padding: 2rem 0 3rem;
+        padding: 4rem 0 3rem;
     }
 
     .section-title {
@@ -706,6 +741,13 @@
 
     .term-item {
         margin-bottom: 2rem;
+        padding: 1.2rem 1.5rem;
+        gap: 1rem;
+    }
+
+    .term-number {
+        font-size: 2.5rem;
+        min-width: 60px;
     }
 
     .term-title {
@@ -714,6 +756,11 @@
 
     .term-description {
         font-size: 0.9rem;
+    }
+
+    .module-btn {
+        padding: 0.75rem 1.8rem;
+        font-size: 0.95rem;
     }
 
     .stats-grid-syllabus {
@@ -764,6 +811,15 @@
 
     .term-item {
         margin-bottom: 1.8rem;
+        padding: 1rem 1.2rem;
+        gap: 0.8rem;
+        flex-direction: column;
+    }
+
+    .term-number {
+        font-size: 2rem;
+        min-width: auto;
+        text-align: left;
     }
 
     .term-title {
@@ -778,6 +834,8 @@
     .module-btn {
         padding: 0.7rem 1.5rem;
         font-size: 0.9rem;
+        width: 100%;
+        justify-content: center;
     }
 
     .stats-grid-syllabus {
@@ -2167,6 +2225,10 @@
 }
 
 @media (max-width: 576px) {
+    .taiyari-section .container {
+        overflow-x: hidden;
+    }
+
     .taiyari-section {
         padding: 2.5rem 0;
     }
@@ -2630,24 +2692,28 @@
         padding: 4rem 0;
     }
 
-    .student-life-subtitle {
-        font-size: 0.95rem;
-        margin: -0.5rem auto 3rem;
-        padding: 0 1rem;
-    }
-
-    .student-life-grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 200px;
+    .life-cards-container {
+        flex-wrap: wrap;
         gap: 1.5rem;
+        height: auto;
     }
 
-    .item-3 {
-        grid-row: span 2;
+    .life-card {
+        flex: 1 1 calc(50% - 0.75rem);
+        height: 350px;
     }
 
-    .item-5 {
-        grid-column: span 2;
+    .life-card:hover {
+        flex: 1 1 calc(50% - 0.75rem);
+    }
+
+    .life-cards-container:has(.life-card:hover) .life-card:not(:hover) {
+        flex: 1 1 calc(50% - 0.75rem);
+    }
+
+    .btn-watch-more {
+        font-size: 1rem;
+        padding: 0.9rem 2rem;
     }
 }
 
@@ -2657,29 +2723,34 @@
     }
 
     .student-life-subtitle {
-        font-size: 0.9rem;
-        margin: -0.5rem auto 2.5rem;
+        font-size: 0.95rem;
+        padding: 0 1rem;
     }
 
-    .student-life-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 180px;
+    .life-cards-container {
         gap: 1.2rem;
     }
 
-    .item-1,
-    .item-2,
-    .item-3,
-    .item-4,
-    .item-6,
-    .item-7 {
-        grid-column: span 1;
-        grid-row: span 1;
+    .life-card {
+        flex: 1 1 calc(50% - 0.6rem);
+        height: 300px;
     }
 
-    .item-5 {
-        grid-column: span 2;
-        grid-row: span 1;
+    .life-card:hover {
+        flex: 1 1 calc(50% - 0.6rem);
+    }
+
+    .life-cards-container:has(.life-card:hover) .life-card:not(:hover) {
+        flex: 1 1 calc(50% - 0.6rem);
+    }
+
+    .life-cta-container {
+        margin-top: 2.5rem;
+    }
+
+    .btn-watch-more {
+        font-size: 0.95rem;
+        padding: 0.85rem 1.8rem;
     }
 }
 
@@ -2688,35 +2759,38 @@
         padding: 2.5rem 0;
     }
 
-    .student-life-subtitle {
-        font-size: 0.85rem;
-        margin: -0.5rem auto 2rem;
+    .life-cards-container {
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
-    .student-life-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 220px;
-        gap: 1rem;
+    .life-card {
+        flex: 1;
+        height: 350px;
     }
 
-    .item-1,
-    .item-2,
-    .item-3,
-    .item-4,
-    .item-5,
-    .item-6,
-    .item-7 {
-        grid-column: span 1;
-        grid-row: span 1;
+    .life-card:hover {
+        flex: 1;
+    }
+
+    .life-cards-container:has(.life-card:hover) .life-card:not(:hover) {
+        flex: 1;
+    }
+
+    .life-cta-container {
+        margin-top: 2rem;
+    }
+
+    .btn-watch-more {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .btn-watch-more i {
+        font-size: 1.1rem;
     }
 }
 
-@media (max-width: 375px) {
-    .student-life-grid {
-        grid-auto-rows: 200px;
-        gap: 0.8rem;
-    }
-}
 
 /* 5 Reasons to Join DSA Section Responsive */
 @media (max-width: 991px) {
@@ -3017,5 +3091,135 @@
 
     .life-caption {
         padding: 0 0.5rem !important;
+    }
+}
+
+
+/* AI-Powered Tools Section Responsive */
+@media (max-width: 1199px) {
+    .tools-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.2rem;
+    }
+
+    .ai-tools-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .tools-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    /* Reduce gradient width on tablets */
+    .tools-marquee::before,
+    .tools-marquee::after {
+        width: 80px;
+    }
+
+    .ai-tools-title {
+        font-size: 2rem;
+    }
+
+    .ai-tools-cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem;
+        overflow: visible;
+    }
+
+    .cta-banner-section {
+        margin: -2rem 0;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .ai-tools-section {
+        padding: 3rem 0 5rem 0;
+    }
+
+    /* Hide gradients on mobile for cleaner look */
+    .tools-marquee::before,
+    .tools-marquee::after {
+        display: none;
+    }
+
+    .cta-banner-section {
+        margin: -1.5rem 0;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+    }
+
+    .tool-card {
+        padding: 1.2rem 0.8rem;
+        min-height: 130px;
+    }
+
+    .tool-logo {
+        width: 80px;
+        height: 28px;
+        margin-bottom: 0.5rem;
+    }
+
+    .tool-name {
+        font-size: 0.75rem;
+    }
+
+    .tool-badge {
+        font-size: 0.55rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .ai-tools-title {
+        font-size: 1.6rem;
+    }
+
+    .ai-tools-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .cta-image {
+        max-width: 120px;
+        top: -50px;
+        margin-bottom: -50px;
+    }
+
+    .cta-title {
+        font-size: 1.2rem;
+    }
+
+    .btn-know-more {
+        padding: 0.75rem 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .ai-tools-title {
+        font-size: 1.4rem;
+    }
+
+    .ai-tools-cta {
+        padding: 1.5rem;
     }
 }

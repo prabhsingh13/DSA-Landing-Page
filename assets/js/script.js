@@ -501,3 +501,32 @@ if (document.readyState === 'loading') {
 } else {
     setTimeout(initLifeCarousel, 100);
 }
+
+// Life at DSA Video Hover Functionality
+function initLifeVideos() {
+    const lifeCards = document.querySelectorAll('.life-card');
+
+    if (!lifeCards.length) return;
+
+    lifeCards.forEach(card => {
+        const video = card.querySelector('.life-video');
+
+        if (!video) return;
+
+        // Play video on hover
+        card.addEventListener('mouseenter', function () {
+            video.play().catch(err => {
+                console.log('Video play failed:', err);
+            });
+        });
+
+        // Pause and reset video on mouse leave
+        card.addEventListener('mouseleave', function () {
+            video.pause();
+            video.currentTime = 0;
+        });
+    });
+}
+
+// Initialize life videos when DOM is loaded
+document.addEventListener('DOMContentLoaded', initLifeVideos);
